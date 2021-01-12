@@ -1,0 +1,6 @@
+[submodule "sdp8xx.pretty"]
+	path = sdp8xx.pretty
+	url = https://github.com/barafael/sdp8xx.pretty
+[submodule "sdp8xx_symbol"]
+	path = sdp8xx_symbol
+	url = https://github.com/barafael/sdp8xx_symbol
