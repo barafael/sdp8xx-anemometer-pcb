@@ -57,22 +57,11 @@ SWDIO
 Text GLabel 3820 4090 2    50   Input ~ 0
 SWCLK
 $Comp
-L Device:C C1
-U 1 1 5FFF111A
-P 2140 1800
-F 0 "C1" H 2255 1846 50  0000 L CNN
-F 1 "100n" H 2255 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2178 1650 50  0001 C CNN
-F 3 "~" H 2140 1800 50  0001 C CNN
-	1    2140 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C3
 U 1 1 5FFF1545
 P 2600 1800
 F 0 "C3" H 2715 1846 50  0000 L CNN
-F 1 "4.7u" H 2715 1755 50  0000 L CNN
+F 1 "4.7uF" H 2715 1755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2638 1650 50  0001 C CNN
 F 3 "~" H 2600 1800 50  0001 C CNN
 	1    2600 1800
@@ -83,7 +72,7 @@ L Device:C C4
 U 1 1 5FFF1930
 P 3420 1800
 F 0 "C4" H 3535 1846 50  0000 L CNN
-F 1 "10n" H 3535 1755 50  0000 L CNN
+F 1 "10nF" H 3535 1755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3458 1650 50  0001 C CNN
 F 3 "~" H 3420 1800 50  0001 C CNN
 	1    3420 1800
@@ -94,7 +83,7 @@ L Device:C C5
 U 1 1 5FFF1D6A
 P 4010 1800
 F 0 "C5" H 4125 1846 50  0000 L CNN
-F 1 "1u" H 4125 1755 50  0000 L CNN
+F 1 "1uF" H 4125 1755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4048 1650 50  0001 C CNN
 F 3 "~" H 4010 1800 50  0001 C CNN
 	1    4010 1800
@@ -145,62 +134,35 @@ Text GLabel 2880 1140 0    50   Input ~ 0
 Text GLabel 3180 1140 2    50   Input ~ 0
 3v3_analog
 $Comp
-L Device:R R2
+L Device:R R1
 U 1 1 5FFFF827
 P 3030 1140
-F 0 "R2" V 2823 1140 50  0000 C CNN
+F 0 "R1" V 2823 1140 50  0000 C CNN
 F 1 "0" V 2914 1140 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2960 1140 50  0001 C CNN
 F 3 "~" H 3030 1140 50  0001 C CNN
 	1    3030 1140
 	0    1    1    0   
 $EndComp
-Text GLabel 2880 810  0    50   Input ~ 0
-vdda-ext
-Text GLabel 3180 810  2    50   Input ~ 0
-3v3_analog
-$Comp
-L Device:R R1
-U 1 1 60004D06
-P 3030 810
-F 0 "R1" V 2823 810 50  0000 C CNN
-F 1 "0" V 2914 810 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2960 810 50  0001 C CNN
-F 3 "~" H 3030 810 50  0001 C CNN
-	1    3030 810 
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 6000D866
-P 5490 2560
-F 0 "#PWR0101" H 5490 2310 50  0001 C CNN
-F 1 "GND" V 5495 2432 50  0000 R CNN
-F 2 "" H 5490 2560 50  0001 C CNN
-F 3 "" H 5490 2560 50  0001 C CNN
-	1    5490 2560
+P 5400 1930
+F 0 "#PWR0101" H 5400 1680 50  0001 C CNN
+F 1 "GND" V 5405 1802 50  0000 R CNN
+F 2 "" H 5400 1930 50  0001 C CNN
+F 3 "" H 5400 1930 50  0001 C CNN
+	1    5400 1930
 	0    1    1    0   
 $EndComp
-Text GLabel 5490 2660 0    50   Input ~ 0
+Text GLabel 5900 1930 2    50   Input ~ 0
 SWCLK
-Text GLabel 5490 2760 0    50   Input ~ 0
+Text GLabel 5900 1830 2    50   Input ~ 0
 SWDIO
-$Comp
-L Connector_Generic:Conn_01x07 J1
-U 1 1 6000EB55
-P 5690 2860
-F 0 "J1" H 5770 2902 50  0000 L CNN
-F 1 "debug" H 5770 2811 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x07_P1.00mm_Vertical" H 5690 2860 50  0001 C CNN
-F 3 "~" H 5690 2860 50  0001 C CNN
-	1    5690 2860
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5490 2860
-NoConn ~ 5490 2960
-Text GLabel 5490 3060 0    50   Input ~ 0
+NoConn ~ 5900 2130
+Text GLabel 5400 1830 0    50   Input ~ 0
 3v3
-Text GLabel 5490 3160 0    50   Input ~ 0
+Text GLabel 5900 2230 2    50   Input ~ 0
 NRST
 $Comp
 L power:GND #PWR0102
@@ -400,5 +362,272 @@ F 2 "sdp8xx:sdp8xx" H 7930 4010 50  0001 C CNN
 F 3 "" H 7930 4010 50  0001 C CNN
 	1    7930 4010
 	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 6004CD1F
+P 5400 2030
+F 0 "#PWR04" H 5400 1780 50  0001 C CNN
+F 1 "GND" V 5405 1902 50  0000 R CNN
+F 2 "" H 5400 2030 50  0001 C CNN
+F 3 "" H 5400 2030 50  0001 C CNN
+	1    5400 2030
+	0    1    1    0   
+$EndComp
+Text GLabel 5900 2030 2    50   Input ~ 0
+SWO
+NoConn ~ 5400 2130
+$Comp
+L Regulator_Linear:MCP1700-3302E_TO92 U2
+U 1 1 60069250
+P 9700 1170
+F 0 "U2" H 9700 928 50  0000 C CNN
+F 1 "MCP1700-3302E_TO92" H 9700 1019 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9700 970 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 9700 1170 50  0001 C CNN
+	1    9700 1170
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 6006CFD5
+P 9080 1320
+F 0 "C6" H 9195 1366 50  0000 L CNN
+F 1 "1uF" H 9195 1275 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9118 1170 50  0001 C CNN
+F 3 "~" H 9080 1320 50  0001 C CNN
+	1    9080 1320
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 6006D855
+P 10280 1320
+F 0 "C7" H 10395 1366 50  0000 L CNN
+F 1 "1uF" H 10395 1275 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10318 1170 50  0001 C CNN
+F 3 "~" H 10280 1320 50  0001 C CNN
+	1    10280 1320
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1170 10280 1170
+Wire Wire Line
+	10280 1470 9700 1470
+Wire Wire Line
+	9700 1470 9080 1470
+Connection ~ 9700 1470
+Wire Wire Line
+	9080 1170 9400 1170
+$Comp
+L power:GND #PWR0106
+U 1 1 6006EAB7
+P 9700 1470
+F 0 "#PWR0106" H 9700 1220 50  0001 C CNN
+F 1 "GND" H 9705 1297 50  0000 C CNN
+F 2 "" H 9700 1470 50  0001 C CNN
+F 3 "" H 9700 1470 50  0001 C CNN
+	1    9700 1470
+	1    0    0    -1  
+$EndComp
+Text GLabel 10280 1170 1    50   Input ~ 0
+3v3
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 600707E5
+P 7110 1260
+F 0 "J2" V 6982 1440 50  0000 L CNN
+F 1 "Conn_01x04" V 7073 1440 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7110 1260 50  0001 C CNN
+F 3 "~" H 7110 1260 50  0001 C CNN
+	1    7110 1260
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 600725B2
+P 7010 1460
+F 0 "#PWR0107" H 7010 1210 50  0001 C CNN
+F 1 "GND" H 7015 1287 50  0000 C CNN
+F 2 "" H 7010 1460 50  0001 C CNN
+F 3 "" H 7010 1460 50  0001 C CNN
+	1    7010 1460
+	1    0    0    -1  
+$EndComp
+Text GLabel 7110 1460 3    50   Input ~ 0
+VLiPo
+Text GLabel 7210 1460 3    50   Input ~ 0
+I2C-SDA
+Text GLabel 7310 1460 3    50   Input ~ 0
+I2C-SCL
+Text GLabel 9080 1170 1    50   Input ~ 0
+VLiPo
+Text GLabel 3820 3490 2    50   Input ~ 0
+LED
+Text GLabel 3820 3390 2    50   Input ~ 0
+GPIO1
+$Comp
+L Device:LED D2
+U 1 1 60085DD3
+P 5210 3280
+F 0 "D2" V 5249 3162 50  0000 R CNN
+F 1 "LED" V 5158 3162 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5210 3280 50  0001 C CNN
+F 3 "~" H 5210 3280 50  0001 C CNN
+	1    5210 3280
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5210 3430 3    50   Input ~ 0
+LED
+Text GLabel 5210 2830 1    50   Input ~ 0
+3v3
+Text GLabel 2620 3990 0    50   Input ~ 0
+ADC-IN9
+$Comp
+L Device:R R2
+U 1 1 600A1285
+P 5210 2980
+F 0 "R2" H 5280 3026 50  0000 L CNN
+F 1 "R" H 5280 2935 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5140 2980 50  0001 C CNN
+F 3 "~" H 5210 2980 50  0001 C CNN
+	1    5210 2980
+	1    0    0    -1  
+$EndComp
+Text GLabel 3820 3890 2    50   Input ~ 0
+I2C-SDA
+Text GLabel 3820 3790 2    50   Input ~ 0
+I2C-SCL
+Text GLabel 7700 2800 3    50   Input ~ 0
+I2C-SDA
+$Comp
+L Device:R R10
+U 1 1 600B5519
+P 7700 2650
+F 0 "R10" V 7493 2650 50  0000 C CNN
+F 1 "4.7k" V 7584 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7630 2650 50  0001 C CNN
+F 3 "~" H 7700 2650 50  0001 C CNN
+	1    7700 2650
+	-1   0    0    1   
+$EndComp
+Text GLabel 7700 2500 1    50   Input ~ 0
+3v3
+Text GLabel 7830 2800 3    50   Input ~ 0
+I2C-SCL
+$Comp
+L Device:R R11
+U 1 1 600B7B53
+P 7830 2650
+F 0 "R11" V 7623 2650 50  0000 C CNN
+F 1 "4.7k" V 7714 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7760 2650 50  0001 C CNN
+F 3 "~" H 7830 2650 50  0001 C CNN
+	1    7830 2650
+	-1   0    0    1   
+$EndComp
+Text GLabel 7830 2500 1    50   Input ~ 0
+3v3
+Text GLabel 2620 3790 0    50   Input ~ 0
+GPIO2
+Text GLabel 2620 3690 0    50   Input ~ 0
+GPIO3
+Text GLabel 2620 4090 0    50   Input ~ 0
+GPIO4
+$Comp
+L Device:C C1
+U 1 1 5FFF111A
+P 2140 1800
+F 0 "C1" H 2255 1846 50  0000 L CNN
+F 1 "100nF" H 2255 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2178 1650 50  0001 C CNN
+F 3 "~" H 2140 1800 50  0001 C CNN
+	1    2140 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 600496AE
+P 5600 2030
+F 0 "J1" H 5650 2447 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 5650 2356 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 5600 2030 50  0001 C CNN
+F 3 "~" H 5600 2030 50  0001 C CNN
+	1    5600 2030
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 600F03CD
+P 9880 2210
+F 0 "H3" H 9980 2256 50  0000 L CNN
+F 1 "MountingHole" H 9980 2165 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 9880 2210 50  0001 C CNN
+F 3 "~" H 9880 2210 50  0001 C CNN
+	1    9880 2210
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 600F0CDA
+P 9670 2210
+F 0 "H2" H 9770 2256 50  0000 L CNN
+F 1 "MountingHole" H 9770 2165 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 9670 2210 50  0001 C CNN
+F 3 "~" H 9670 2210 50  0001 C CNN
+	1    9670 2210
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 600F12E6
+P 9440 2210
+F 0 "H1" H 9540 2256 50  0000 L CNN
+F 1 "MountingHole" H 9540 2165 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 9440 2210 50  0001 C CNN
+F 3 "~" H 9440 2210 50  0001 C CNN
+	1    9440 2210
+	1    0    0    -1  
+$EndComp
+Text GLabel 1180 3500 3    50   Input ~ 0
+GPIO3
+Text GLabel 1080 3500 3    50   Input ~ 0
+GPIO2
+Text GLabel 1280 3500 3    50   Input ~ 0
+GPIO4
+Text GLabel 980  3500 3    50   Input ~ 0
+GPIO1
+$Comp
+L power:GND #PWR0108
+U 1 1 6014C357
+P 5400 2230
+F 0 "#PWR0108" H 5400 1980 50  0001 C CNN
+F 1 "GND" V 5405 2102 50  0000 R CNN
+F 2 "" H 5400 2230 50  0001 C CNN
+F 3 "" H 5400 2230 50  0001 C CNN
+	1    5400 2230
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 6016738B
+P 980 3300
+F 0 "J3" V 944 3212 50  0000 R CNN
+F 1 "Conn_01x01" V 853 3212 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 980 3300 50  0001 C CNN
+F 3 "~" H 980 3300 50  0001 C CNN
+	1    980  3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 60173003
+P 1180 3300
+F 0 "J4" V 1144 3112 50  0000 R CNN
+F 1 "Conn_01x03" V 1053 3112 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 1180 3300 50  0001 C CNN
+F 3 "~" H 1180 3300 50  0001 C CNN
+	1    1180 3300
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
