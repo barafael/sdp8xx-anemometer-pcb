@@ -29,7 +29,7 @@ L Device:C C2
 U 1 1 5FFEB718
 P 2470 2990
 F 0 "C2" V 2218 2990 50  0000 C CNN
-F 1 "100n" V 2309 2990 50  0000 C CNN
+F 1 "100nF" V 2309 2990 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2508 2840 50  0001 C CNN
 F 3 "~" H 2470 2990 50  0001 C CNN
 	1    2470 2990
@@ -628,6 +628,19 @@ F 1 "Conn_01x03" V 1053 3112 50  0000 R CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 1180 3300 50  0001 C CNN
 F 3 "~" H 1180 3300 50  0001 C CNN
 	1    1180 3300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 880  3500 3    50   Input ~ 0
+ADC-IN9
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 60048526
+P 880 3300
+F 0 "J5" V 844 3212 50  0000 R CNN
+F 1 "Conn_01x01" V 753 3212 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 880 3300 50  0001 C CNN
+F 3 "~" H 880 3300 50  0001 C CNN
+	1    880  3300
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
