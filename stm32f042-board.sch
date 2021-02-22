@@ -48,8 +48,6 @@ F 3 "" H 2320 2990 50  0001 C CNN
 $EndComp
 Text GLabel 2620 2990 1    50   Input ~ 0
 NRST
-Text GLabel 3120 2790 1    50   Input ~ 0
-3v3_analog
 Text GLabel 3020 2790 1    50   Input ~ 0
 3v3
 Text GLabel 3820 3990 2    50   Input ~ 0
@@ -65,28 +63,6 @@ F 1 "4.7uF" H 2715 1755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2638 1650 50  0001 C CNN
 F 3 "~" H 2600 1800 50  0001 C CNN
 	1    2600 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 5FFF1930
-P 3420 1800
-F 0 "C4" H 3535 1846 50  0000 L CNN
-F 1 "10nF" H 3535 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3458 1650 50  0001 C CNN
-F 3 "~" H 3420 1800 50  0001 C CNN
-	1    3420 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C5
-U 1 1 5FFF1D6A
-P 4010 1800
-F 0 "C5" H 4125 1846 50  0000 L CNN
-F 1 "1uF" H 4125 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4048 1650 50  0001 C CNN
-F 3 "~" H 4010 1800 50  0001 C CNN
-	1    4010 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -109,41 +85,6 @@ $EndComp
 Connection ~ 2370 1950
 Wire Wire Line
 	2370 1950 2140 1950
-Wire Wire Line
-	3420 1950 3730 1950
-Wire Wire Line
-	4010 1650 3420 1650
-$Comp
-L power:GND #PWR03
-U 1 1 5FFFE4B3
-P 3730 1950
-F 0 "#PWR03" H 3730 1700 50  0001 C CNN
-F 1 "GND" H 3735 1777 50  0000 C CNN
-F 2 "" H 3730 1950 50  0001 C CNN
-F 3 "" H 3730 1950 50  0001 C CNN
-	1    3730 1950
-	1    0    0    -1  
-$EndComp
-Connection ~ 3730 1950
-Wire Wire Line
-	3730 1950 4010 1950
-Text GLabel 3720 1650 1    50   Input ~ 0
-3v3_analog
-Text GLabel 2880 1140 0    50   Input ~ 0
-3v3
-Text GLabel 3180 1140 2    50   Input ~ 0
-3v3_analog
-$Comp
-L Device:R R1
-U 1 1 5FFFF827
-P 3030 1140
-F 0 "R1" V 2823 1140 50  0000 C CNN
-F 1 "0" V 2914 1140 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2960 1140 50  0001 C CNN
-F 3 "~" H 3030 1140 50  0001 C CNN
-	1    3030 1140
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 6000D866
@@ -328,41 +269,6 @@ Text GLabel 7220 2500 1    50   Input ~ 0
 3v3
 Text GLabel 7320 2500 1    50   Input ~ 0
 3v3
-Text GLabel 4920 4210 0    50   Input ~ 0
-5V
-$Comp
-L sdp8xx:sdp8xx SDP1
-U 1 1 6005A6EF
-P 5330 4010
-F 0 "SDP1" V 5534 4338 50  0000 L CNN
-F 1 "sdp8xx" V 5625 4338 50  0000 L CNN
-F 2 "sdp8xx:sdp8xx" H 5330 4010 50  0001 C CNN
-F 3 "" H 5330 4010 50  0001 C CNN
-	1    5330 4010
-	0    1    1    0   
-$EndComp
-$Comp
-L sdp8xx:sdp8xx SDP2
-U 1 1 60063732
-P 6630 4010
-F 0 "SDP2" V 6834 4338 50  0000 L CNN
-F 1 "sdp8xx" V 6925 4338 50  0000 L CNN
-F 2 "sdp8xx:sdp8xx" H 6630 4010 50  0001 C CNN
-F 3 "" H 6630 4010 50  0001 C CNN
-	1    6630 4010
-	0    1    1    0   
-$EndComp
-$Comp
-L sdp8xx:sdp8xx SDP3
-U 1 1 60063DA1
-P 7930 4010
-F 0 "SDP3" V 8134 4338 50  0000 L CNN
-F 1 "sdp8xx" V 8225 4338 50  0000 L CNN
-F 2 "sdp8xx:sdp8xx" H 7930 4010 50  0001 C CNN
-F 3 "" H 7930 4010 50  0001 C CNN
-	1    7930 4010
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 6004CD1F
@@ -430,7 +336,7 @@ F 3 "" H 9700 1470 50  0001 C CNN
 	1    9700 1470
 	1    0    0    -1  
 $EndComp
-Text GLabel 10280 1170 1    50   Input ~ 0
+Text GLabel 9080 1170 1    50   Input ~ 0
 3v3
 $Comp
 L Connector_Generic:Conn_01x04 J2
@@ -457,15 +363,13 @@ $EndComp
 Text GLabel 7110 1460 3    50   Input ~ 0
 VLiPo
 Text GLabel 7210 1460 3    50   Input ~ 0
-I2C-SDA
+TX
 Text GLabel 7310 1460 3    50   Input ~ 0
-I2C-SCL
-Text GLabel 9080 1170 1    50   Input ~ 0
+RX
+Text GLabel 10280 1170 1    50   Input ~ 0
 VLiPo
 Text GLabel 3820 3490 2    50   Input ~ 0
 LED
-Text GLabel 3820 3390 2    50   Input ~ 0
-GPIO1
 $Comp
 L Device:LED D2
 U 1 1 60085DD3
@@ -481,8 +385,6 @@ Text GLabel 5210 3430 3    50   Input ~ 0
 LED
 Text GLabel 5210 2830 1    50   Input ~ 0
 3v3
-Text GLabel 2620 3990 0    50   Input ~ 0
-ADC-IN9
 $Comp
 L Device:R R2
 U 1 1 600A1285
@@ -495,11 +397,11 @@ F 3 "~" H 5210 2980 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3820 3890 2    50   Input ~ 0
-I2C-SDA
+RX
 Text GLabel 3820 3790 2    50   Input ~ 0
-I2C-SCL
+TX
 Text GLabel 7700 2800 3    50   Input ~ 0
-I2C-SDA
+TX
 $Comp
 L Device:R R10
 U 1 1 600B5519
@@ -514,7 +416,7 @@ $EndComp
 Text GLabel 7700 2500 1    50   Input ~ 0
 3v3
 Text GLabel 7830 2800 3    50   Input ~ 0
-I2C-SCL
+RX
 $Comp
 L Device:R R11
 U 1 1 600B7B53
@@ -528,12 +430,6 @@ F 3 "~" H 7830 2650 50  0001 C CNN
 $EndComp
 Text GLabel 7830 2500 1    50   Input ~ 0
 3v3
-Text GLabel 2620 3790 0    50   Input ~ 0
-GPIO2
-Text GLabel 2620 3690 0    50   Input ~ 0
-GPIO3
-Text GLabel 2620 4090 0    50   Input ~ 0
-GPIO4
 $Comp
 L Device:C C1
 U 1 1 5FFF111A
@@ -557,47 +453,6 @@ F 3 "~" H 5600 2030 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
-U 1 1 600F03CD
-P 9880 2210
-F 0 "H3" H 9980 2256 50  0000 L CNN
-F 1 "MountingHole" H 9980 2165 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 9880 2210 50  0001 C CNN
-F 3 "~" H 9880 2210 50  0001 C CNN
-	1    9880 2210
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 600F0CDA
-P 9670 2210
-F 0 "H2" H 9770 2256 50  0000 L CNN
-F 1 "MountingHole" H 9770 2165 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 9670 2210 50  0001 C CNN
-F 3 "~" H 9670 2210 50  0001 C CNN
-	1    9670 2210
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 600F12E6
-P 9440 2210
-F 0 "H1" H 9540 2256 50  0000 L CNN
-F 1 "MountingHole" H 9540 2165 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3mm" H 9440 2210 50  0001 C CNN
-F 3 "~" H 9440 2210 50  0001 C CNN
-	1    9440 2210
-	1    0    0    -1  
-$EndComp
-Text GLabel 1180 3500 3    50   Input ~ 0
-GPIO3
-Text GLabel 1080 3500 3    50   Input ~ 0
-GPIO2
-Text GLabel 1280 3500 3    50   Input ~ 0
-GPIO4
-Text GLabel 980  3500 3    50   Input ~ 0
-GPIO1
-$Comp
 L power:GND #PWR0108
 U 1 1 6014C357
 P 5400 2230
@@ -609,38 +464,36 @@ F 3 "" H 5400 2230 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J3
-U 1 1 6016738B
-P 980 3300
-F 0 "J3" V 944 3212 50  0000 R CNN
-F 1 "Conn_01x01" V 853 3212 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 980 3300 50  0001 C CNN
-F 3 "~" H 980 3300 50  0001 C CNN
-	1    980  3300
-	0    -1   -1   0   
+L sdp8xx:sdp8xx SDP1
+U 1 1 601F2DED
+P 5330 4010
+F 0 "SDP1" V 5534 4338 50  0000 L CNN
+F 1 "sdp8xx" V 5625 4338 50  0000 L CNN
+F 2 "sdp8xx:sdp8xx" H 5330 4010 50  0001 C CNN
+F 3 "" H 5330 4010 50  0001 C CNN
+	1    5330 4010
+	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J4
-U 1 1 60173003
-P 1180 3300
-F 0 "J4" V 1144 3112 50  0000 R CNN
-F 1 "Conn_01x03" V 1053 3112 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 1180 3300 50  0001 C CNN
-F 3 "~" H 1180 3300 50  0001 C CNN
-	1    1180 3300
-	0    -1   -1   0   
+L sdp8xx:sdp8xx SDP2
+U 1 1 601F44F2
+P 6630 4010
+F 0 "SDP2" V 6834 4338 50  0000 L CNN
+F 1 "sdp8xx" V 6925 4338 50  0000 L CNN
+F 2 "sdp8xx:sdp8xx" H 6630 4010 50  0001 C CNN
+F 3 "" H 6630 4010 50  0001 C CNN
+	1    6630 4010
+	0    1    1    0   
 $EndComp
-Text GLabel 880  3500 3    50   Input ~ 0
-ADC-IN9
 $Comp
-L Connector_Generic:Conn_01x01 J5
-U 1 1 60048526
-P 880 3300
-F 0 "J5" V 844 3212 50  0000 R CNN
-F 1 "Conn_01x01" V 753 3212 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 880 3300 50  0001 C CNN
-F 3 "~" H 880 3300 50  0001 C CNN
-	1    880  3300
-	0    -1   -1   0   
+L sdp8xx:sdp8xx SDP3
+U 1 1 601F545A
+P 7930 4010
+F 0 "SDP3" V 8134 4338 50  0000 L CNN
+F 1 "sdp8xx" V 8225 4338 50  0000 L CNN
+F 2 "sdp8xx:sdp8xx" H 7930 4010 50  0001 C CNN
+F 3 "" H 7930 4010 50  0001 C CNN
+	1    7930 4010
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
