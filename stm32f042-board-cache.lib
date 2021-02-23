@@ -1,11 +1,29 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x04
+# stm32f042-board-rescue_C-Device
 #
-DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
+DEF stm32f042-board-rescue_C-Device C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "stm32f042-board-rescue_C-Device" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# stm32f042-board-rescue_Conn_01x04-Connector_Generic
+#
+DEF stm32f042-board-rescue_Conn_01x04-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
+F1 "stm32f042-board-rescue_Conn_01x04-Connector_Generic" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -24,11 +42,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_02x05_Odd_Even
+# stm32f042-board-rescue_Conn_02x05_Odd_Even-Connector_Generic
 #
-DEF Connector_Generic_Conn_02x05_Odd_Even J 0 40 Y N 1 F N
+DEF stm32f042-board-rescue_Conn_02x05_Odd_Even-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "Connector_Generic_Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
+F1 "stm32f042-board-rescue_Conn_02x05_Odd_Even-Connector_Generic" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -59,29 +77,24 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_C
+# stm32f042-board-rescue_GND-power
 #
-DEF Device_C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
+DEF stm32f042-board-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "stm32f042-board-rescue_GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
 DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Device_LED
+# stm32f042-board-rescue_LED-Device
 #
-DEF Device_LED D 0 40 N N 1 F N
+DEF stm32f042-board-rescue_LED-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device_LED" 0 -100 50 H V C CNN
+F1 "stm32f042-board-rescue_LED-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -100,11 +113,29 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R
+# stm32f042-board-rescue_MCP1700-3302E_TO92-Regulator_Linear
 #
-DEF Device_R R 0 0 N Y 1 F N
+DEF stm32f042-board-rescue_MCP1700-3302E_TO92-Regulator_Linear U 0 10 Y Y 1 F N
+F0 "U" -150 -125 50 H V C CNN
+F1 "stm32f042-board-rescue_MCP1700-3302E_TO92-Regulator_Linear" 0 -125 50 H V L CNN
+F2 "Package_TO_SOT_THT:TO-92_Inline" 0 -200 50 H I C CIN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO?92*
+$ENDFPLIST
+DRAW
+S -200 200 200 -75 0 1 10 f
+X GND 1 0 300 100 D 50 50 1 1 W
+X VI 2 -300 0 100 R 50 50 1 1 W
+X VO 3 300 0 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# stm32f042-board-rescue_R-Device
+#
+DEF stm32f042-board-rescue_R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
+F1 "stm32f042-board-rescue_R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -117,11 +148,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MCU_ST_STM32F0_STM32F042F6Px
+# stm32f042-board-rescue_STM32F042F6Px-MCU_ST_STM32F0
 #
-DEF MCU_ST_STM32F0_STM32F042F6Px U 0 20 Y Y 1 F N
+DEF stm32f042-board-rescue_STM32F042F6Px-MCU_ST_STM32F0 U 0 20 Y Y 1 F N
 F0 "U" -500 650 50 H V L CNN
-F1 "MCU_ST_STM32F0_STM32F042F6Px" 0 650 50 H V L CNN
+F1 "stm32f042-board-rescue_STM32F042F6Px-MCU_ST_STM32F0" 0 650 50 H V L CNN
 F2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" -500 -700 50 H I R CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -152,43 +183,11 @@ X PA3 9 600 200 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Regulator_Linear_MCP1700-3302E_TO92
+# stm32f042-board-rescue_sdp8xx-sdp8xx
 #
-DEF Regulator_Linear_MCP1700-3302E_TO92 U 0 10 Y Y 1 F N
-F0 "U" -150 -125 50 H V C CNN
-F1 "Regulator_Linear_MCP1700-3302E_TO92" 0 -125 50 H V L CNN
-F2 "Package_TO_SOT_THT:TO-92_Inline" 0 -200 50 H I C CIN
-F3 "" 0 0 50 H I C CNN
-ALIAS LM79L12_TO92 LM79L15_TO92 L79L05_TO92 L79L08_TO92 L79L12_TO92 L79L15_TO92 MCP1700-3002E_TO92 MCP1700-1202E_TO92 MCP1700-1802E_TO92 MCP1700-2502E_TO92 MCP1700-2802E_TO92 MCP1700-3302E_TO92 MCP1700-5002E_TO92
-$FPLIST
- TO?92*
-$ENDFPLIST
-DRAW
-S -200 200 200 -75 0 1 10 f
-X GND 1 0 300 100 D 50 50 1 1 W
-X VI 2 -300 0 100 R 50 50 1 1 W
-X VO 3 300 0 100 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# sdp8xx_sdp8xx
-#
-DEF sdp8xx_sdp8xx SDP 0 40 Y Y 1 F N
+DEF stm32f042-board-rescue_sdp8xx-sdp8xx SDP 0 40 Y Y 1 F N
 F0 "SDP" 0 0 50 H V C CNN
-F1 "sdp8xx_sdp8xx" 0 100 50 H V C CNN
+F1 "stm32f042-board-rescue_sdp8xx-sdp8xx" 0 100 50 H V C CNN
 F2 "sdp8xx:sdp8xx" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

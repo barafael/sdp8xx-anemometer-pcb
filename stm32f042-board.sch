@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F0:STM32F042F6Px U1
+L stm32f042-board-rescue:STM32F042F6Px-MCU_ST_STM32F0 U1
 U 1 1 5FFEA051
 P 3220 3490
 F 0 "U1" H 3220 2601 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L stm32f042-board-rescue:C-Device C2
 U 1 1 5FFEB718
 P 2470 2990
 F 0 "C2" V 2218 2990 50  0000 C CNN
@@ -36,7 +36,7 @@ F 3 "~" H 2470 2990 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR01
+L stm32f042-board-rescue:GND-power #PWR01
 U 1 1 5FFEC05A
 P 2320 2990
 F 0 "#PWR01" H 2320 2740 50  0001 C CNN
@@ -55,7 +55,7 @@ SWDIO
 Text GLabel 3820 4090 2    50   Input ~ 0
 SWCLK
 $Comp
-L Device:C C3
+L stm32f042-board-rescue:C-Device C3
 U 1 1 5FFF1545
 P 2600 1800
 F 0 "C3" H 2715 1846 50  0000 L CNN
@@ -72,7 +72,7 @@ Wire Wire Line
 Text GLabel 2370 1650 1    50   Input ~ 0
 3v3
 $Comp
-L power:GND #PWR02
+L stm32f042-board-rescue:GND-power #PWR02
 U 1 1 5FFF61A3
 P 2370 1950
 F 0 "#PWR02" H 2370 1700 50  0001 C CNN
@@ -86,7 +86,7 @@ Connection ~ 2370 1950
 Wire Wire Line
 	2370 1950 2140 1950
 $Comp
-L power:GND #PWR0101
+L stm32f042-board-rescue:GND-power #PWR0101
 U 1 1 6000D866
 P 5400 1930
 F 0 "#PWR0101" H 5400 1680 50  0001 C CNN
@@ -106,7 +106,7 @@ Text GLabel 5400 1830 0    50   Input ~ 0
 Text GLabel 5900 2230 2    50   Input ~ 0
 NRST
 $Comp
-L power:GND #PWR0102
+L stm32f042-board-rescue:GND-power #PWR0102
 U 1 1 6001367D
 P 3020 4290
 F 0 "#PWR0102" H 3020 4040 50  0001 C CNN
@@ -123,7 +123,7 @@ Text GLabel 5230 4210 0    50   Input ~ 0
 Text GLabel 5230 4410 0    50   Input ~ 0
 SDP-SDA1
 $Comp
-L power:GND #PWR0103
+L stm32f042-board-rescue:GND-power #PWR0103
 U 1 1 60023721
 P 5230 4310
 F 0 "#PWR0103" H 5230 4060 50  0001 C CNN
@@ -140,7 +140,7 @@ SDP-SDA2
 Text GLabel 6530 4210 0    50   Input ~ 0
 3v3
 $Comp
-L power:GND #PWR0104
+L stm32f042-board-rescue:GND-power #PWR0104
 U 1 1 600245CA
 P 6530 4310
 F 0 "#PWR0104" H 6530 4060 50  0001 C CNN
@@ -155,7 +155,7 @@ SDP-SCL3
 Text GLabel 7830 4210 0    50   Input ~ 0
 3v3
 $Comp
-L power:GND #PWR0105
+L stm32f042-board-rescue:GND-power #PWR0105
 U 1 1 60024FEE
 P 7830 4310
 F 0 "#PWR0105" H 7830 4060 50  0001 C CNN
@@ -192,7 +192,7 @@ SDP-SCL3
 Text GLabel 6920 2800 3    50   Input ~ 0
 SDP-SDA3
 $Comp
-L Device:R R3
+L stm32f042-board-rescue:R-Device R3
 U 1 1 6003D818
 P 6820 2650
 F 0 "R3" V 6613 2650 50  0000 C CNN
@@ -203,7 +203,7 @@ F 3 "~" H 6820 2650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R4
+L stm32f042-board-rescue:R-Device R4
 U 1 1 6003EC54
 P 6920 2650
 F 0 "R4" V 6713 2650 50  0000 C CNN
@@ -214,7 +214,7 @@ F 3 "~" H 6920 2650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R5
+L stm32f042-board-rescue:R-Device R5
 U 1 1 6003EFA7
 P 7020 2650
 F 0 "R5" V 6813 2650 50  0000 C CNN
@@ -225,7 +225,7 @@ F 3 "~" H 7020 2650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R6
+L stm32f042-board-rescue:R-Device R6
 U 1 1 6003F333
 P 7120 2650
 F 0 "R6" V 6913 2650 50  0000 C CNN
@@ -236,7 +236,7 @@ F 3 "~" H 7120 2650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R7
+L stm32f042-board-rescue:R-Device R7
 U 1 1 6003F5C1
 P 7220 2650
 F 0 "R7" V 7013 2650 50  0000 C CNN
@@ -247,7 +247,7 @@ F 3 "~" H 7220 2650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R8
+L stm32f042-board-rescue:R-Device R8
 U 1 1 6003F944
 P 7320 2650
 F 0 "R8" V 7113 2650 50  0000 C CNN
@@ -270,7 +270,7 @@ Text GLabel 7220 2500 1    50   Input ~ 0
 Text GLabel 7320 2500 1    50   Input ~ 0
 3v3
 $Comp
-L power:GND #PWR04
+L stm32f042-board-rescue:GND-power #PWR04
 U 1 1 6004CD1F
 P 5400 2030
 F 0 "#PWR04" H 5400 1780 50  0001 C CNN
@@ -284,7 +284,7 @@ Text GLabel 5900 2030 2    50   Input ~ 0
 SWO
 NoConn ~ 5400 2130
 $Comp
-L Regulator_Linear:MCP1700-3302E_TO92 U2
+L stm32f042-board-rescue:MCP1700-3302E_TO92-Regulator_Linear U2
 U 1 1 60069250
 P 9700 1170
 F 0 "U2" H 9700 928 50  0000 C CNN
@@ -295,7 +295,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 9700 1170 
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C6
+L stm32f042-board-rescue:C-Device C6
 U 1 1 6006CFD5
 P 9080 1320
 F 0 "C6" H 9195 1366 50  0000 L CNN
@@ -306,7 +306,7 @@ F 3 "~" H 9080 1320 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
+L stm32f042-board-rescue:C-Device C7
 U 1 1 6006D855
 P 10280 1320
 F 0 "C7" H 10395 1366 50  0000 L CNN
@@ -326,7 +326,7 @@ Connection ~ 9700 1470
 Wire Wire Line
 	9080 1170 9400 1170
 $Comp
-L power:GND #PWR0106
+L stm32f042-board-rescue:GND-power #PWR0106
 U 1 1 6006EAB7
 P 9700 1470
 F 0 "#PWR0106" H 9700 1220 50  0001 C CNN
@@ -339,7 +339,7 @@ $EndComp
 Text GLabel 9080 1170 1    50   Input ~ 0
 3v3
 $Comp
-L Connector_Generic:Conn_01x04 J2
+L stm32f042-board-rescue:Conn_01x04-Connector_Generic J2
 U 1 1 600707E5
 P 7110 1260
 F 0 "J2" V 6982 1440 50  0000 L CNN
@@ -350,7 +350,7 @@ F 3 "~" H 7110 1260 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0107
+L stm32f042-board-rescue:GND-power #PWR0107
 U 1 1 600725B2
 P 7010 1460
 F 0 "#PWR0107" H 7010 1210 50  0001 C CNN
@@ -371,7 +371,7 @@ VLiPo
 Text GLabel 3820 3490 2    50   Input ~ 0
 LED
 $Comp
-L Device:LED D2
+L stm32f042-board-rescue:LED-Device D2
 U 1 1 60085DD3
 P 5210 3280
 F 0 "D2" V 5249 3162 50  0000 R CNN
@@ -386,7 +386,7 @@ LED
 Text GLabel 5210 2830 1    50   Input ~ 0
 3v3
 $Comp
-L Device:R R2
+L stm32f042-board-rescue:R-Device R2
 U 1 1 600A1285
 P 5210 2980
 F 0 "R2" H 5280 3026 50  0000 L CNN
@@ -403,7 +403,7 @@ TX
 Text GLabel 7700 2800 3    50   Input ~ 0
 TX
 $Comp
-L Device:R R10
+L stm32f042-board-rescue:R-Device R10
 U 1 1 600B5519
 P 7700 2650
 F 0 "R10" V 7493 2650 50  0000 C CNN
@@ -418,7 +418,7 @@ Text GLabel 7700 2500 1    50   Input ~ 0
 Text GLabel 7830 2800 3    50   Input ~ 0
 RX
 $Comp
-L Device:R R11
+L stm32f042-board-rescue:R-Device R11
 U 1 1 600B7B53
 P 7830 2650
 F 0 "R11" V 7623 2650 50  0000 C CNN
@@ -431,7 +431,7 @@ $EndComp
 Text GLabel 7830 2500 1    50   Input ~ 0
 3v3
 $Comp
-L Device:C C1
+L stm32f042-board-rescue:C-Device C1
 U 1 1 5FFF111A
 P 2140 1800
 F 0 "C1" H 2255 1846 50  0000 L CNN
@@ -442,7 +442,7 @@ F 3 "~" H 2140 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J1
+L stm32f042-board-rescue:Conn_02x05_Odd_Even-Connector_Generic J1
 U 1 1 600496AE
 P 5600 2030
 F 0 "J1" H 5650 2447 50  0000 C CNN
@@ -453,7 +453,7 @@ F 3 "~" H 5600 2030 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0108
+L stm32f042-board-rescue:GND-power #PWR0108
 U 1 1 6014C357
 P 5400 2230
 F 0 "#PWR0108" H 5400 1980 50  0001 C CNN
@@ -464,7 +464,7 @@ F 3 "" H 5400 2230 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L sdp8xx:sdp8xx SDP1
+L stm32f042-board-rescue:sdp8xx-sdp8xx SDP1
 U 1 1 601F2DED
 P 5330 4010
 F 0 "SDP1" V 5534 4338 50  0000 L CNN
@@ -475,7 +475,7 @@ F 3 "" H 5330 4010 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L sdp8xx:sdp8xx SDP2
+L stm32f042-board-rescue:sdp8xx-sdp8xx SDP2
 U 1 1 601F44F2
 P 6630 4010
 F 0 "SDP2" V 6834 4338 50  0000 L CNN
@@ -486,7 +486,7 @@ F 3 "" H 6630 4010 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L sdp8xx:sdp8xx SDP3
+L stm32f042-board-rescue:sdp8xx-sdp8xx SDP3
 U 1 1 601F545A
 P 7930 4010
 F 0 "SDP3" V 8134 4338 50  0000 L CNN
