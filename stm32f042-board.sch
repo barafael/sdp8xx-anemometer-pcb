@@ -167,17 +167,17 @@ F 3 "" H 7830 4310 50  0001 C CNN
 $EndComp
 Text GLabel 7830 4410 0    50   Input ~ 0
 SDP-SDA3
-Text GLabel 3820 3090 2    50   Input ~ 0
-SDP-SCL1
 Text GLabel 3820 2990 2    50   Input ~ 0
+SDP-SCL1
+Text GLabel 3820 3090 2    50   Input ~ 0
 SDP-SDA1
-Text GLabel 3820 3290 2    50   Input ~ 0
-SDP-SCL2
 Text GLabel 3820 3190 2    50   Input ~ 0
+SDP-SCL2
+Text GLabel 3820 3290 2    50   Input ~ 0
 SDP-SDA2
-Text GLabel 3820 3690 2    50   Input ~ 0
-SDP-SCL3
 Text GLabel 3820 3590 2    50   Input ~ 0
+SDP-SCL3
+Text GLabel 3820 3690 2    50   Input ~ 0
 SDP-SDA3
 Text GLabel 7220 2800 3    50   Input ~ 0
 SDP-SCL1
@@ -361,13 +361,13 @@ F 3 "" H 7010 1460 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7110 1460 3    50   Input ~ 0
-VLiPo
+Vin
 Text GLabel 7210 1460 3    50   Input ~ 0
 TX
 Text GLabel 7310 1460 3    50   Input ~ 0
 RX
 Text GLabel 10280 1170 1    50   Input ~ 0
-VLiPo
+Vin
 Text GLabel 3820 3490 2    50   Input ~ 0
 LED
 $Comp
@@ -495,5 +495,38 @@ F 2 "sdp8xx:sdp8xx" H 7930 4010 50  0001 C CNN
 F 3 "" H 7930 4010 50  0001 C CNN
 	1    7930 4010
 	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 603CB8C0
+P 4710 700
+F 0 "H1" H 4810 746 50  0000 L CNN
+F 1 "MountingHole" H 4810 655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 4710 700 50  0001 C CNN
+F 3 "~" H 4710 700 50  0001 C CNN
+	1    4710 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 603CBE61
+P 5080 690
+F 0 "H2" H 5180 736 50  0000 L CNN
+F 1 "MountingHole" H 5180 645 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 5080 690 50  0001 C CNN
+F 3 "~" H 5080 690 50  0001 C CNN
+	1    5080 690 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 603CC338
+P 5440 700
+F 0 "H3" H 5540 746 50  0000 L CNN
+F 1 "MountingHole" H 5540 655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.1mm" H 5440 700 50  0001 C CNN
+F 3 "~" H 5440 700 50  0001 C CNN
+	1    5440 700 
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
